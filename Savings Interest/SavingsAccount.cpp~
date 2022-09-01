@@ -1,0 +1,38 @@
+//imports needed modules including the custom SavingsAccount class from my file
+#include <iostream>
+#include "Savings.hpp"
+#include <fstream>
+#include <iomanip>
+
+//uses namespace to simplify code (no [std::] at the start)
+using namespace std;
+
+//starts main body of the program
+int main()
+{
+  //sets output to 2 d.p.
+  cout<<fixed<<setprecision(2);
+  cout<<endl;
+  
+  //defines a list of SavingsAccount variables, sets them as similar to test against for a range of inputs both string and numerical
+  //this includes "£ pounds.pennies","rates" as well as " £ pound.00","rates" or "pound.00","rates%" ect..
+  SavingsAccount Accounts [5];
+  Accounts[0]=SavingsAccount("£ 159.29","0");
+  Accounts[1]=SavingsAccount(159,29,10);
+  Accounts[2]=SavingsAccount("£ 159.00","20%");
+  Accounts[3]=SavingsAccount(159,20);
+  Accounts[4]=SavingsAccount();
+
+  for(int i=0;i<5;i++)
+    {
+      cout<<Accounts[i]<<endl;
+      cout<<"Deposit £10:"<<endl;
+      Accounts[i].deposit(10);
+      cout<<endl<<"Withdraw £20"<<endl;
+      Accounts[i].withdraw(20);
+      cout<<"-----------"<<endl<<endl;
+    }
+
+  //ends main()
+  return 0;
+}

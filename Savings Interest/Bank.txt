@@ -1,0 +1,20 @@
+Balance: £ 159.29
+Rate (%): 0
+Next Years Funds (£): 159.29
+
+Balance: £ 159.29
+Rate (%): 1
+Next Years Funds (£): 179.492
+
+Balance: £ 159
+Rate (%): 2
+Next Years Funds (£): 201.65
+
+Balance: £ 159
+Rate (%): 2
+Next Years Funds (£): 201.65
+
+Balance: £ 0
+Rate (%): 0
+Next Years Funds (£): 0
+
