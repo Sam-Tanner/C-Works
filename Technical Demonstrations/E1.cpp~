@@ -1,0 +1,15 @@
+#include <iostream>
+#include "Circle.hpp"
+
+using namespace std;
+
+int main()
+{
+Circle A(3,2,1);
+Circle B(4,5,6);
+Circle C = A+B;
+//C.show();
+ cout<<endl<<"For Circle A: "<<A<<endl<<"For Circle B: "<<B<<endl << "For Circle C: "<<C<<endl;
+//cout<<endl<<B.getArea()<<endl;
+return 0;
+}

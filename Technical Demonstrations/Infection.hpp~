@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+float pi=3.14159265;
+
+class Circle
+{
+  //Defines private members of class
+private:
+  double rad;
+  double xvalue;
+  double yvalue;
+  //Defines public members of class
+public:
+  Circle(double r, double x, double y) {rad=r;xvalue=x;yvalue=y;}
+  Circle(double r, double x) {rad=r;xvalue=x;yvalue=0.0;}
+  Circle(double r) {rad=r;xvalue=0.0;yvalue=0.0;}
+  Circle() {rad=0.0;xvalue=0.0;yvalue=0.0;}
+  //Functions that act on of call parts of the private members
+  void operator+(Circle c);
+  double getRadius(); double getX(); double getY(); double getArea();
+  void show();
+};
+void Circle::operator+(Circle c) {}
+double Circle:: getRadius(){return rad;}
+double Circle:: getX(){return xvalue;}
+double Circle:: getY(){return yvalue;}
+double Circle::getArea(){return (rad*rad*pi);}
+void Circle::show(){cout<<"Radius of:"<<rad<<", X position:"<<xvalue<<", Y position:"<<yvalue<<endl;}
